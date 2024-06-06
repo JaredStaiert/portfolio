@@ -1,0 +1,137 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-image: url("../images/background/rainbow-vortex.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-left: 6vw;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100vh;
+}
+
+nav ul,
+nav li {
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 0 1vh;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  height: 5vh;
+  line-height: 5vh;
+}
+
+nav a:hover {
+  background: #b80c09;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+#cursor {
+  border-radius: 20px;
+  box-shadow: 0px 0px 63px 25px rgba(255, 255, 255, 0.5);
+}
+
+#intro {
+  min-height: 100vh;
+}
+
+#experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+
+#experience div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  min-width: 10vw;
+  min-height: 15vh;
+  margin: clamp(2px, 1vh, 20px);
+  text-align: center;
+  color: black;
+
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
+}
+
+#experience img {
+  max-width: 10vw;
+  max-height: 15vh;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+#portfolio div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+  min-width: 20vw;
+  min-height: 30vh;
+  margin: clamp(15px, 5vh, 50px);
+  padding: 1em;
+  text-align: center;
+  color: black;
+
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
+}
+
+#portfolio ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+
+#portfolio ul li {
+  display: inline-block;
+  padding: 0 1vw 0;
+}
+
+#portfolio li img {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  padding: 1vh;
+}
+
+#portfolio li img:hover {
+  transition-duration: 250ms;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px red;
+}
